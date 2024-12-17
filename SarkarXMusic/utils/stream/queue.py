@@ -1,8 +1,8 @@
 import asyncio
 from typing import Union
 
-from AnonXMusic.misc import db
-from AnonXMusic.utils.formatters import check_duration, seconds_to_min
+from SarkarXMusic.misc import db
+from SarkarXMusic.utils.formatters import check_duration, seconds_to_min
 from config import autoclean, time_to_seconds
 
 
