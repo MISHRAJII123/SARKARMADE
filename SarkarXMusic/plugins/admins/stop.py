@@ -1,16 +1,16 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AnonXMusic import app
-from AnonXMusic.core.call import Anony
-from AnonXMusic.utils.database import set_loop
-from AnonXMusic.utils.decorators import AdminRightsCheck
-from AnonXMusic.utils.inline import close_markup
+from SarkarXMusic import app
+from SarkarXMusic.core.call import Sarkari
+from SarkarXMusic.utils.database import set_loop
+from SarkarXMusic.utils.decorators import AdminRightsCheck
+from SarkarXMusic.utils.inline import close_markup
 from config import BANNED_USERS
 
 
 @app.on_message(
-    filters.command(["end", "stop", "cend", "cstop"]) & filters.group & ~BANNED_USERS
+    filters.command(["end", "stop", "sarkar", "cend", "cstop"]) & filters.group & ~BANNED_USERS
 )
 @AdminRightsCheck
 async def stop_music(cli, message: Message, _, chat_id):
