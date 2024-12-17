@@ -6,11 +6,11 @@ import config
 from ..logging import LOGGER
 
 
-class Anony(Client):
+class Sarkari(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Starting Bot...")
+        LOGGER(__name__).info(f"Starting Bot Ding Dong✨...")
         super().__init__(
-            name="AnonXMusic",
+            name="SarkarXMusic",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             bot_token=config.BOT_TOKEN,
@@ -48,7 +48,7 @@ class Anony(Client):
                 "Please promote your bot as an admin in your log group/channel."
             )
             exit()
-        LOGGER(__name__).info(f"Music Bot Started as {self.name}")
+        LOGGER(__name__).info(f"Music Bot Started as ✨🕊️ {self.name}")
 
     async def stop(self):
         await super().stop()
