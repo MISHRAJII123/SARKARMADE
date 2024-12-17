@@ -9,13 +9,13 @@ from pyrogram.types import InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
-from AnonXMusic import app
-from AnonXMusic.core.userbot import assistants
-from AnonXMusic.misc import SUDOERS, mongodb
-from AnonXMusic.plugins import ALL_MODULES
-from AnonXMusic.utils.database import get_served_chats, get_served_users, get_sudoers
-from AnonXMusic.utils.decorators.language import language, languageCB
-from AnonXMusic.utils.inline.stats import back_stats_buttons, stats_buttons
+from SarkarXMusic import app
+from SarkarXMusic.core.userbot import assistants
+from SarkarXMusic.misc import SUDOERS, mongodb
+from SarkarXMusic.plugins import ALL_MODULES
+from SarkarXMusic.utils.database import get_served_chats, get_served_users, get_sudoers
+from SarkarXMusic.utils.decorators.language import language, languageCB
+from SarkarXMusic.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
 
