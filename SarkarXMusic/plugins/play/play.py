@@ -6,14 +6,14 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from AnonXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from AnonXMusic.core.call import Anony
-from AnonXMusic.utils import seconds_to_min, time_to_seconds
-from AnonXMusic.utils.channelplay import get_channeplayCB
-from AnonXMusic.utils.decorators.language import languageCB
-from AnonXMusic.utils.decorators.play import PlayWrapper
-from AnonXMusic.utils.formatters import formats
-from AnonXMusic.utils.inline import (
+from SarkarXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from SarkarXMusic.core.call import Sarkari
+from SarkarXMusic.utils import seconds_to_min, time_to_seconds
+from SarkarXMusic.utils.channelplay import get_channeplayCB
+from SarkarXMusic.utils.decorators.language import languageCB
+from SarkarXMusic.utils.decorators.play import PlayWrapper
+from SarkarXMusic.utils.formatters import formats
+from SarkarXMusic.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
@@ -288,7 +288,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Anony.stream_call(url)
+                await Sarkari.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
