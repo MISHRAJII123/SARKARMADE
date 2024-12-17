@@ -4,8 +4,8 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import LOGGER_ID
-from AnonXMusic import app
-from AnonXMusic.utils.database import add_served_chat, get_assistant
+from SarkarXMusic import app
+from SarkarXMusic.utils.database import add_served_chat, get_assistant
 
 photo = [
     "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
