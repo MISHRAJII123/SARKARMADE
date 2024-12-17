@@ -1,9 +1,9 @@
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from AnonXMusic import app
-from AnonXMusic.misc import SUDOERS, db
-from AnonXMusic.utils.database import (
+from SarkarXMusic import app
+from SarkarXMusic.misc import SUDOERS, db
+from SarkarXMusic.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
@@ -72,11 +72,11 @@ def AdminRightsCheck(mystic):
                     if message.from_user.id not in admins:
                         if await is_skipmode(message.chat.id):
                             upvote = await get_upvote_count(chat_id)
-                            text = f"""<b>ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɴᴇᴇᴅᴇᴅ</b>
+                            text = f"""<b>ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɴᴇᴇᴅᴇᴅ.ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ ᴊɪᴏɴ sᴀʀᴋᴀʀ ɴᴇᴛᴡᴏʀᴋ</b>
 
 ʀᴇғʀᴇsʜ ᴀᴅᴍɪɴ ᴄᴀᴄʜᴇ ᴠɪᴀ : /reload
 
-» {upvote} ᴠᴏᴛᴇs ɴᴇᴇᴅᴇᴅ ғᴏʀ ᴘᴇʀғᴏʀᴍɪɴɢ ᴛʜɪs ᴀᴄᴛɪᴏɴ."""
+» {upvote} ᴠᴏᴛᴇs ɴᴇᴇᴅᴇᴅ ғᴏʀ ᴘᴇʀғᴏʀᴍɪɴɢ ᴛʜɪs ᴀᴄᴛɪᴏɴ.ᴅᴏɴ'ᴛ ғᴏʀɢᴇᴛ ᴛᴏ ᴊɪᴏɴ sᴀʀᴋᴀʀ ɴᴇᴛᴡᴏʀᴋ."""
 
                             command = message.command[0]
                             if command[0] == "c":
