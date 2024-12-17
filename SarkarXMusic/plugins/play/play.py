@@ -20,8 +20,8 @@ from SarkarXMusic.utils.inline import (
     slider_markup,
     track_markup,
 )
-from AnonXMusic.utils.logger import play_logs
-from AnonXMusic.utils.stream.stream import stream
+from SarkarXMusic.utils.logger import play_logs
+from SarkarXMusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
