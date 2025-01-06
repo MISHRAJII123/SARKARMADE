@@ -90,16 +90,14 @@ async def greet_new_member(_, member: ChatMemberUpdated):
     
     try:
         # Welcome message
-        welcome_message = f"👋 {user.mention}, Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}!\n\n" \
-                          "• I Hᴏᴘᴇ Yᴏᴜ Aʀᴇ Fɪɴᴇ!\n\n" \
-                          "• Pʟᴇᴀsᴇ Aʟᴡᴀʏs Fᴏʟʟᴏᴡ Tʜᴇ Gʀᴏᴜᴘ Rᴜʟᴇs!\n" \
+        welcome_message = f"𝙃ᴇʏ 𝘽ᴀʙʏ {user.mention}, 𝙒єℓ¢σмє❤️‍🔥 {member.chat.title}!\n\n" \
                           "────────────────────\n" \
-                          f"ᴛ ᴏ ᴛ ᴀ ʟ ᴍ ᴇ ᴍ ʙ ᴇ ʀ: {count}\n" \
+                          f"𝘼ℓℓ 𝙈ємвєя : {count}\n" \
                           "────────────────────**"
         
-        # Creating an inline button to "Join 👋" with the link
+        # Creating an inline button to "❍ 𝙅𝙊𝙄𝙉 ❍" with the link
         keyboard = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Join 👋", url="https://t.me/SARKAR_UPDATE")]]
+            [[InlineKeyboardButton("❍ 𝙅𝙊𝙄𝙉 ❍", url="https://t.me/PROMOTION_UPDATE")]]
         )
 
         # Send the welcome message with the inline button
